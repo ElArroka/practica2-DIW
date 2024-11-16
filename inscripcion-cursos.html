@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripción a los Cursos</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="icon" href="img/favicon-32x32.png" type="image/png">
+</head>
+<body>
+    <header class="main-header">
+        
+        <div class="branding">
+            <img src="img/isologo-taller.png" alt="Isologo de El Taller" class="isologo">
+            <h1><b>el taller</b></h1>
+        </div>
+        
+        <nav class="top-nav">
+            <ul>
+                <li><a href="que-es-la-ceramica.html">Cerámica</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="inscripcion-cursos.html" class="active">Inscripción</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <main>
+        <section class="content-section">
+            <h2>Inscripción a los cursos</h2>
+            <p class="mandatory-note">Los campos marcados con * son obligatorios</p>
+
+            <form>
+                <fieldset>
+                    <legend>Detalles de la inscripción</legend>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Nombre *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="surname">Apellidos *</label>
+                            <input type="text" id="surname" name="surname" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Correo electrónico *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Teléfono *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="birthdate">Fecha de nacimiento *</label>
+                            <input type="date" id="birthdate" name="birthdate" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="course">Curso *</label>
+                            <select id="course" name="course" required>
+                                <option value="">Selecciona el curso</option>
+                                <option value="torno">Torno</option>
+                                <option value="ceramica">Cerámica</option>
+                                <option value="modelado">Modelado</option>
+                                <option value="esmaltes">Esmaltes</option>
+                                <option value="joyeria">Joyería cerámica</option>
+                            </select>
+                        </div>
+                    </div>
+                </fieldset>
+                
+
+                <fieldset>
+                    <legend>Otras informaciones</legend>
+                
+                    <!-- Pregunta "¿Has hecho otros cursos con nosotros?" -->
+                    <fieldset>
+                        <legend>¿Has hecho otros cursos con nosotros? *</legend>
+                        <label>
+                            <input type="radio" name="previous_courses" value="yes" required> Sí
+                        </label>
+                        <label>
+                            <input type="radio" name="previous_courses" value="no"> No
+                        </label>
+                    </fieldset>
+                
+                    <!-- Pregunta "¿Quieres comentar o preguntar algo?" -->
+                    <div class="question-group">
+                        <label for="comments">¿Quieres comentar o preguntar algo?</label>
+                        <textarea id="comments" name="comments"></textarea>
+                    </div>
+                </fieldset>
+                
+                
+                
+                
+
+                <fieldset>
+                    <legend>Elige un método de pago *</legend>
+                    <label><input type="radio" name="payment_method" value="transferencia" required> Transferencia</label>
+                    <label><input type="radio" name="payment_method" value="tarjeta"> Tarjeta de débito / crédito</label>
+                    <label><input type="radio" name="payment_method" value="efectivo"> En efectivo</label>
+                </fieldset>
+
+                <p class="privacy-info">
+                    INFORMACIÓN SOBRE PROTECCIÓN DE DATOS DE EL TALLER. Finalidades: recogida de datos para la inscripción en los cursos. 
+                    Legitimación: Consentimiento del interesado. Destinatarios: No están previstas cesiones de datos a terceros, excepto 
+                    obligación legal. Derechos: Puede retirar su consentimiento en cualquier momento, así como acceder, rectificar, 
+                    suprimir sus datos y otros derechos dirigiéndose a <a href="#">info@eltaller.es.</a> Información Adicional: Puede ampliar la información 
+                    en el enlace de <a href="#">Aviso Legal</a> y <a href="#">Política de privacidad</a>.
+                </p>
+                <label class="privacy-consent">
+                    <input type="checkbox" required> He leído y acepto la <a href="#">política de privacidad</a> *
+                </label>
+                <button type="submit" class="submit-button">Inscríbeme</button>
+
+            </form>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <nav class="footer-nav">
+            <a href="#">Aviso legal</a> | 
+            <a href="#">Política de privacidad</a> | 
+            <a href="#">Política de cookies</a>
+        </nav>
+        <p>2023 © Alejandro Aroca Aroca</p>
+    </footer>
+</body>
+</html>
